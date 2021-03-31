@@ -1,0 +1,15 @@
+server:
+  port: 8084
+spring:
+  application:
+    name: errand boy
+  zipkin:
+    baseUrl: http://127.0.0.1:9411/
+    enabled: true
+  sleuth:
+    enabled: true
+    sampler:
+      probability: 1.0
+#tracking:
+#  zipkin:
+#    enabled: true

@@ -1,0 +1,15 @@
+server:
+  port: 8083
+spring:
+  application:
+    name: delivery
+  zipkin:
+    baseUrl: http://127.0.0.1:9411/
+    enabled: true
+  sleuth:
+    enabled: true
+    sampler:
+      probability: 1.0
+#tracking:
+#  zipkin:
+#    enabled: true
